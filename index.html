@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>學分救援站｜大學生學分危機警報系統</title>
+  <title>學分救援站</title>
   <style>
     * {
       box-sizing: border-box;
@@ -316,24 +316,7 @@
   </div>
 
 <script>
-let courses = JSON.parse(localStorage.getItem("courses")) || [
-  { id: 1, name: "電腦應用", teacher: "李老師", credit: 2 },
-  { id: 2, name: "管理學", teacher: "王老師", credit: 3 }
-];
 
-let tasks = JSON.parse(localStorage.getItem("tasks")) || [
-  { id: 1, courseId: 1, type: "小考", name: "Excel 小考", date: getDateAfter(2), done: false },
-  { id: 2, courseId: 2, type: "作業", name: "期末心得", date: getDateAfter(5), done: false }
-];
-
-let grades = JSON.parse(localStorage.getItem("grades")) || [
-  { id: 1, courseId: 1, item: "作業", weight: 30, score: 80 },
-  { id: 2, courseId: 1, item: "期中考", weight: 30, score: 65 },
-  { id: 3, courseId: 1, item: "期末考", weight: 40, score: "" },
-  { id: 4, courseId: 2, item: "小考", weight: 20, score: 70 },
-  { id: 5, courseId: 2, item: "期中考", weight: 30, score: 75 },
-  { id: 6, courseId: 2, item: "期末考", weight: 50, score: "" }
-];
 
 function getDateAfter(days) {
   const d = new Date();
